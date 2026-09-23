@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="pt-MZ"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Folha de estilo -->
+    <link rel="stylesheet" href="/css/age-verification.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <!-- UTM Tracking (deve carregar antes de qualquer redirect/CTA) -->
+    <script src="/js/utm-tracking.js"></script>
+
+    <!-- UTMFY Pixel -->
+    <script
+        src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+        data-pixel-id="6a0196e8709e4d83cacea86d"
+        async defer></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1098711072684863');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1098711072684863&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page age-verification-page">
+                <div class="card age-verification-card">
+                    <div class="card-emoji">🔞</div>
+                    <h1 class="age-title">Age Verification</h1>
+                    <p class="age-subtitle">You must be 18 years or older to access this content</p>
+
+                    <div class="age-description">
+                        <p>This platform requires participants to be at least 18 years old. Please confirm your age to continue.</p>
+                    </div>
+
+                    <div class="age-buttons">
+                        <button class="btn btn-primary" id="confirmAgeButton">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span>I am 18 or older</span>
+                        </button>
+
+                        <button class="btn btn-secondary" id="declineAgeButton">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5 5L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span>I am under 18</span>
+                        </button>
+                    </div>
+
+                    <div class="age-warning">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#6B7280" stroke-width="1.5"></path>
+                            <path d="M8 5V8" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M8 11H8.00667" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                        <span>By clicking "I am 18 or older", you confirm that you meet the age requirement.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Terms of Use</a>
+                    <span class="footer-link-separator">•</span>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <span class="footer-link-separator">•</span>
+                    <a href="#" class="footer-link">Help</a>
+                </div>
+
+                <div class="footer-copyright">
+                    © <span id="currentYear">2025</span> LLC. All rights reserved.
+                </div>
+            
+        
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/age-verification.js"></script>
+
+
+</body></html>

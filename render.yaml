@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kes-nexus-k7p3-0817
+    runtime: static
+    plan: free
+    buildCommand: echo "Static site — no build step"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /age
+        destination: /age.html
+      - type: redirect
+        source: /
+        destination: /age.html
